@@ -306,7 +306,7 @@ class Alipay {
     function verifyCallback() {
         $async = empty($_GET);
 
-        $data = $async ? $_POST : $_GET;
+        $data = $async ? $_POST : $_REQUEST;
         if (empty($data)) {
             return FALSE;
         }
